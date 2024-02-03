@@ -1,5 +1,3 @@
-// Timer.js
-
 import React, { useEffect, useState } from "react";
 import topImage from "../assets/top-image.svg";
 import bottomImage from "../assets/bottom-image.svg";
@@ -87,7 +85,7 @@ const Timer = () => {
   return (
     <div className="timer-container">
       <div className="top-image">
-        <img src={topImage} alt="image1" />
+        <img className="top-img" src={topImage} alt="image1" />
       </div>
       <div className="timer-content">
         <div className="timer-text-container">
@@ -96,8 +94,8 @@ const Timer = () => {
           <p className="more-info">Sign up to find out more about the launch</p>
           <button className="sign-up-btn">Sign Up</button>
         </div>
-        <div className="rocket-image">
-          <img src={rocket} alt="rocket" />
+        <div className="rocket-image-container">
+          <img className="rocket-image" src={rocket} alt="rocket" />
         </div>
       </div>
       <div className="bottom-image">
